@@ -1,0 +1,26 @@
+[
+	{
+		"nombre": "Mouse",
+		"precio": 777,
+		"stock": 77,
+		"id": "2"
+	},
+	{
+		"nombre": "Memoria",
+		"precio": 876,
+		"stock": 1000,
+		"id": "3"
+	},
+	{
+		"nombre": "Teclado",
+		"precio": 4455,
+		"stock": 99,
+		"id": "5"
+	},
+	{
+		"nombre": "Teclado2",
+		"precio": 5000,
+		"stock": 98,
+		"id": "7"
+	}
+]
