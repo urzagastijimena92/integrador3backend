@@ -16,6 +16,7 @@
 .carrito th, .carrito td {
     width: auto;
     height: auto;
+    max-width: 130px;
     border:1px solid #00262B;
     padding: 7px;
     text-align: center;
