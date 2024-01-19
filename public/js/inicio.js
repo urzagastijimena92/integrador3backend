@@ -91,7 +91,8 @@ async function start() {
         }
         return new Proxy(producto, handler)
     }
-    
+
+   
     let productosLeidos = await servicioProductos.getAll()
     let productosLeidosProxy = productosLeidos.map(producto => proxyProducto(producto))
 

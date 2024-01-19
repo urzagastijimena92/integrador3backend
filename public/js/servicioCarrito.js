@@ -1,6 +1,6 @@
 const url = '/api/carrito/'
 
-const proxyProducto = producto => {
+const proxyCarrito = carrito => {
 
     const handler = {
         get: function (target, prop, receiver) {
@@ -13,24 +13,25 @@ const proxyProducto = producto => {
             return Reflect.get(...arguments)
         }
     }
-    return new Proxy(producto, handler)
+    return new Proxy(carrito, handler)
 }
 
 
 async function enviar(carrito) {
-    const productoLeido = await fetch(url, {
+    const carritoLeido = await fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json'
         },
         body: JSON.stringify(carrito)
     }).then(r => r.json())
-    const productoLeidoProxy = proxyProducto(productoLeido)
-    return productoLeidoProxy;
+    const carritoLeidoProxy = proxyCarrito(carritoLeido)
+    return carritoLeidoProxy;
 }
 
 
 export default {
     enviar,
+    proxyCarrito
 }
     
