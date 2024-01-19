@@ -180,6 +180,7 @@ function start(){
     refBotonPedir = document.querySelector('.carrito .btn-pedir')
 
     carrito = leer()
+    
     render()
 }
 
