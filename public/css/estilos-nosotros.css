@@ -1,0 +1,109 @@
+.nosotros {
+    overflow-x: hidden;
+}
+
+.nosotros>p, .nosotros>h2, .nosotros>h3{
+    width: 75vw;
+    margin: 0 auto;
+    padding: 15px;
+    color:#00262B;
+    line-height: 28px;
+    text-align: center;
+}
+
+.nosotros>h3{
+    margin: 5% auto;
+}
+
+.nosotros>p{
+    text-align: left;
+}
+
+.nosotros .acordeon{
+    background-color: #00262B;
+    color:white;
+    padding: 15px;
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    border:none;
+    text-align: center;
+    outline: none;
+    font-size: large;
+    cursor:pointer;
+    border:1px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.nosotros .active, .nosotros .acordeon:hover {
+    background-color:rgb(6,102,114);
+}
+
+.nosotros .panel {
+    display:none;
+    width: 75vw;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color:#fbd53ddb;
+    color:#00262B;
+    overflow:hidden;
+}
+
+.nosotros .panel li, .panel p{
+    padding: 10px;
+}
+
+.nosotros .panel li{
+    list-style-type:decimal;
+    margin-left: 25px;
+}
+
+.nosotros #testimonios{
+    margin-top: 1.8%;
+}
+
+.nosotros .testimonios {
+    background-color:white;
+    border-style: double;
+    margin: 1% auto;
+}
+
+/* -------------------------------------------MEDIAQUERY NOSOTROS-------------------------- */
+
+@media (width <=600px) {
+    .nosotros{
+        font-size: smaller;
+    }
+    .nosotros .acordeon{
+        font-size: smaller;
+        width: 90vw;
+        text-align: left;
+    }
+    .nosotros>p, .nosotros>h2, .nosotros>h3{
+        width: 95vw;
+        margin: 0 auto;
+        padding: 10px;
+        line-height: 20px;
+    }
+    .nosotros h2{
+        text-align: center;
+    }
+    .nosotros h2:nth-of-type(1){
+        line-height: 28px;
+        font-size: 24px;
+    }
+    .nosotros .panel{
+        width: 90vw;
+    }
+    .nosotros .panel li, .nosotros .panel p{
+        text-align: left;
+        padding: 5px 0;
+        overflow: visible;
+    }
+    .nosotros .panel li{
+        margin-left: 5px;
+    }
+
+}

@@ -1,0 +1,79 @@
+
+<div class="alta">
+
+    <h2>Alta de cursos</h2>
+
+    <form class="alta-form">
+
+        <div class="input-group">
+            <label for="codigo">código*:</label>
+            <input type="number" name="codigo" id="codigo">
+            <div class="error-detail" id="errorCodigo">Campo no válido</div>
+        </div>
+
+
+        <div class="input-group">
+            <label for="nombre">nombre*:</label>
+            <input type="text" name="nombre" id="nombre">
+            <div class="error-detail" id="errorNombre">Campo no válido</div>
+        </div>
+
+        <div class="input-group">
+            <label for="precio">precio*:</label>
+            <input type="number" step="0.00" name="precio" id="precio">
+            <div class="error-detail" id="errorPrecio">Campo no válido</div>
+        </div>
+
+        <div class="input-group">
+            <label for="vacantes">vacantes*:</label>
+            <input type="number" name="vacantes" id="vacantes">
+            <div class="error-detail" id="errorVacantes">Campo no válido</div>
+        </div>
+
+        <div class="input-group">
+            <label for="duracion">duración*:</label>
+            <input type="text" name="duracion" id="duracion">
+            <div class="error-detail" id="errorDuracion">Campo no válido</div>
+        </div>
+
+        <div class="input-group">
+            <label for="categoria">categoría:</label>
+            <select name="categoria" id="categoria">
+                <option value="Maquetación">Maquetación</option>
+                <option value="Programación">Programación</option>
+                <option value="Base de datos">Base de datos</option>
+                <option value="Programación/Base de datos">Programación/Base de datos</option>
+                <option value="Otra" selected>Otra</option>
+            </select>
+            <div class="error-detail" id="errorCategoria">Campo no válido</div>
+        </div>
+
+        <div class="input-group">
+            <label for="detalles">detalles*:</label>
+            <input type="text" name="detalles" id="detalles">
+            <div class="error-detail" id="errorDetalles">Campo no válido</div>
+        </div>
+
+        <div class="input-group">
+            <label for="foto">foto(URL)*:</label>
+            <input type="text" name="foto" id="foto">
+            <div class="error-detail" id="errorFoto">Campo no válido</div>
+        </div>
+
+        <div class="input-group checkbox">
+            <input type="checkbox" name="cuotas" id="cuotas">
+            <label for="cuotas">6 cuotas sin interés</label>
+        </div>
+
+        <div class="input-group"><span>(*)Campos Obligatorios</span></div>
+        <button class="btn-agregar">Agregar Curso</button>
+
+    </form>
+
+    <hr>
+
+    <h2>Lista de productos disponibles</h2>
+
+    <table></table>
+    
+</div>

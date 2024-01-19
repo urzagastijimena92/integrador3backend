@@ -1,0 +1,200 @@
+.cursos h2{
+    text-align: center;
+}
+.cursos .nav-cursos {
+    overflow-x: hidden;
+    width: 30vw;
+    text-align: center;
+    height: auto;
+    margin:0 auto;
+    background-color: #00262B;
+    font-size: 1.3rem;
+}
+
+.cursos .nav-cursos div{
+    margin: 2.5% auto;
+}
+
+.cursos a{
+    color:#FBD63D;
+    text-decoration: none;
+}
+
+.cursos a:hover{
+    color:white;
+}
+
+.cursos>section {
+    width: 75vw;
+    margin: 0 auto; 
+    color:#00262B;
+    overflow: hidden;
+}
+
+.cursos h2{
+    width: 75vw;
+    margin: 2% auto;
+    text-align: center;
+    padding: 15px auto;
+    color:#00262B;  
+}
+
+.cursos h3{
+    margin: 3% auto;
+}
+
+.cursos p, .cursos li {
+    margin-bottom: 1%;
+    font-size: 16px;
+}
+
+.cursos .li span{
+    color:#FBD63D;
+}
+
+.cursos ul{
+    margin: 0 30px;
+}
+
+.cursos .li ul{
+    margin: 15px;
+    font-size: 1rem;
+}
+
+.cursos .contenedor-grid{
+    overflow: hidden; 
+    height: auto;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    grid-template-areas:
+        "li           descripcion     descripcion"
+        "contenido       img                img "
+        "contenido       img                img "
+        "contenido       img                img "
+        "contenido       img                img "
+    ;
+}
+
+.cursos .descripcion{
+    grid-area: descripcion;
+
+    width:auto;
+    padding: 20px;
+}
+
+.cursos .li{
+    grid-area: li;
+    overflow: hidden;
+    width:330px;
+    height: auto;
+    background-color:#00262B;
+    color:white;
+    border:3px solid #FBD63D;   
+}
+
+.cursos .li li{
+    list-style: none;   
+}
+
+.cursos .contenido{
+    grid-area: contenido;
+}
+
+.cursos .contenido li{
+    padding: 5px; 
+}
+
+.cursos .img{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    margin: 1% 0%;
+}
+
+.cursos>section img{
+    width: 530px;
+    border:5px solid #FBD63D;
+    overflow: hidden;
+}
+
+.cursos .destinatarios li{
+    list-style:square;
+}
+.cursos .hr-cursos {
+    width: 100vw;
+    background-color:#00262B;
+    height: 4px;
+    margin:5% auto;
+    border: none;
+    
+}
+
+/* --------------------------------------MEDIAQUERY INFO-CURSOS----------------------------- */
+
+@media (width <=950px) {
+    .cursos>section {
+        overflow: hidden;
+        width: 98%;
+        height: auto;
+    }
+    .cursos .nav-cursos {
+        width: 90%;
+        font-size: medium;
+    }
+    .cursos h3{
+        margin: 5px;
+    }
+    .cursos h2{
+        width: 98vw;
+    }
+    .cursos .contenedor-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "descripcion"
+            "li"
+            "contenido"
+            "img"  
+        ;
+    }
+    .cursos .descripcion{
+        padding: 1%;
+    }
+    .cursos .li{
+        width: 100%;
+        overflow: hidden;
+        padding: 0px;
+    }
+    .cursos .destinatarios li{
+        padding: 3px 0px;
+        font-size: smaller;
+    }
+    .cursos .li li{
+        padding: 0;
+        font-size: smaller;
+    }
+    .cursos .contenido li{
+        padding: 1%;
+        font-size: smaller;
+    }
+    .cursos>section .img{
+        width: 98%;
+        overflow-x: hidden;
+    }
+    .cursos img{
+        max-width: 400px;
+    }
+    .cursos p, 
+    .cursos .descripcion p{
+        margin: 0%;
+        padding: 10px;
+        font-size: smaller;
+    }
+}

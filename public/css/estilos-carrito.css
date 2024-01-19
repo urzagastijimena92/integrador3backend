@@ -1,0 +1,117 @@
+
+.carrito h2{
+    text-align: center;
+    margin: 35px auto;
+    color:#00262B;
+}
+.carrito table {
+    overflow: hidden;
+    border-collapse: collapse;
+    margin: 5px auto;
+    width: 50vw;
+    height: auto;    
+    font-size: medium;
+}
+
+.carrito th, .carrito td {
+    width: auto;
+    height: auto;
+    border:1px solid #00262B;
+    padding: 7px;
+    text-align: center;
+}
+
+.carrito th {
+    background-color: #00262B;
+    color: white;
+    text-transform: uppercase; 
+    border: 1px solid  #FBD63D;
+}
+.carrito td{
+    background-color: #ffffff6b;
+}
+
+.carrito .botones {
+    display: block;
+    margin: 20px auto;
+    width: 145px;
+    height: 30px;
+    line-height: 30px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #00262B;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.carrito .btn-borrar {
+    background-color: white;
+    color:crimson;
+}
+
+.carrito .btn-borrar:active{
+    background-color: crimson;
+    color:white;
+}
+
+.carrito .btn-pedir {
+    background-color: rgb(20, 133, 20);
+    color:white;
+}
+.carrito .btn-pedir:active{
+    background-color:white;
+    color: rgb(20, 133, 20);
+}
+.carrito table button[id*="btnBorrar-"] {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background-color: crimson;
+    color:white;
+    box-shadow: 2px 2px 2px #00262B;
+    border:none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;  
+    cursor: pointer;
+}
+.carrito table button[id*="btnIncrementar-"],
+.carrito table button[id*="btnDecrementar-"] {
+    width: 25px;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    color:#00262B;
+    box-shadow: 1px 1px 3px #00262B;
+    border:none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------MEDIAQUERY ALTA/TABLA------------------------ */
+@media (width <=1000px) {
+
+    .carrito main{
+        font-size: smaller;
+    }
+    .carrito table {
+        display: block;
+        width: 98vw;
+        min-width: 230px;
+        font-size: 10px;
+        height: auto;
+        overflow-x:scroll;
+        margin: 0 auto;
+       
+    }
+    .carrito th, .carrito td {
+        padding: 4px;
+    }
+}

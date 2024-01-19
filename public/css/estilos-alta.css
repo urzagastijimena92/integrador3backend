@@ -1,0 +1,244 @@
+.alta h2 {
+    text-align: center;
+    margin: 0 auto;
+    color:#00262B;
+}
+/* --------------------------------FORMULARIO ALTA-------------------------------------- */
+.alta-form {
+    background: linear-gradient(140deg, rgba(0,38,43,1) 25%, rgba(6,102,114,1) 100%);
+    width: 75vw;
+    margin: 2% auto;
+    padding: 2% 15%;
+    color:#FBD63D;
+    text-transform: capitalize;
+}
+
+.alta input, .alta .input-group select {
+    width: 100%;
+    height: 26px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    background-color:#f1eeee;
+    padding-left: 6px;
+}
+
+.alta input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer; 
+} 
+
+.alta div.input-group {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.alta .input-group.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px auto;
+}
+.alta .input-group span{
+    color:white;
+    font-size: smaller;
+}
+.alta label{
+    margin-top: 9px;
+}
+/* ------------------------------MENSAJE ERROR INPUT---------------------------------- */
+
+.alta div.error-detail {
+    color:rgb(169, 9, 9);
+    margin-bottom: 5px;
+    height: auto;
+    padding-left: 6px;
+    padding-bottom: 3px;
+    background-color: rgb(198, 120, 120);
+    border-radius: 6px;
+    text-transform: none;
+    display: none;
+}
+/* ----------------------ELIMINACIÓN DE FLECHAS EN INPUT NUMBER--------------------- */
+.alta input[type="number"]::-webkit-inner-spin-button,
+.alta input[type="number"]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+}
+
+/* ---------------------------------BOTON AGREGAR---------------------------------- */
+.alta .btn-agregar {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(20, 133, 20);
+    color:white;
+    box-shadow: 2px 2px 2px #00262B;
+    border:none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;  
+    cursor: pointer;  
+    transition: 0.2s;
+}
+
+.alta #btn-agregar:active {
+    transform: scale(0.9);
+}
+
+
+/* ---------------------------------BOTON ACTUALIZAR---------------------------------- */
+.alta .btn-actualizar {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #FBD63D;
+    color:#00262B;
+    box-shadow: 2px 2px 2px #00262B;
+    border:none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;  
+    cursor: pointer;  
+    transition: 0.2s;
+}
+/* -------------------------------------BOTON BORRAR-------------------------------- */
+.alta button[id*="btnBorrar-"] {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: crimson;
+    color:white;
+    box-shadow: 2px 2px 2px #00262B;
+    border:none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;  
+    cursor: pointer;
+}
+.alta button[id*="btnBorrar-"]:disabled {
+    opacity: 0.5;
+}
+/* -------------------------------------BOTON EDITAR-------------------------------- */
+.alta button[id*="btnEditar-"] {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    color:#00262B;
+    border:none;
+    box-shadow: 2px 2px 2px #00262B;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;  
+    cursor: pointer;
+}
+/* -------------------------------------BOTON CANCELAR------------------------------ */
+.alta button[id*="btnCancelar-"] {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background-color:#00262B;
+    color:#FBD63D;
+    box-shadow: 2px 2px 2px #FBD63D;
+    border:none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin: 10px auto;  
+    cursor: pointer;
+}
+/* ----------------------------------------TABLA------------------------------------ */
+.alta hr{
+    margin-bottom: 3%;
+    height: 4px;
+    background-color:#00262B;
+}
+
+.alta table {
+    overflow: hidden;
+    border-collapse: collapse;
+    margin: 5px auto;
+    width: 75vw;
+    height: auto;    
+    font-size: medium;
+}
+
+.alta th, .alta td {
+    width: 200px;
+    height: auto;
+    border:1px solid  #00262B;
+    padding: 7px;
+    text-align: center;
+}
+
+.alta th {
+    background-color: #00262B;
+    color: white;
+    text-transform: uppercase; 
+    border: 1px solid  #FBD63D;
+}
+.alta td{
+    background-color: #ffffff6b;
+    overflow-wrap: anywhere;
+}
+
+/* ---------------------------------MEDIAQUERY ALTA/TABLA------------------------ */
+@media (width <=1000px) {
+    .alta table {
+        width: 98vw;
+        min-width: 255px;
+        height: auto;    
+        font-size: medium;
+        margin: 0 auto;
+    }
+    .alta main,
+    .alta div.error-detail{
+        font-size: smaller;
+    }
+    .alta .alta-form {
+        width: 98vw;
+        min-width: 255px;
+        padding: 3% 2%;
+        margin: 0 auto;
+    }
+    .alta #btn-agregar {
+        transform: scale(0.8);
+    }
+    .alta #btn-agregar:active {
+        transform: scale(0.6);
+    }
+    .alta table {
+        display: block;
+        font-size: 10px;
+        height: auto;
+        overflow-x:scroll;
+    }
+    .alta th, .alta td {
+        padding: 4px;
+    }
+    .alta table::-webkit-scrollbar{
+        height:10px;
+    }
+    .alta table::-webkit-scrollbar-track{
+        background:white;
+        border: 1px solid rgb(6,102,114);
+    }
+    .alta table::-webkit-scrollbar-thumb{
+        background-color: rgb(0,38,43);
+    }  
+}

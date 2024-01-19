@@ -1,0 +1,162 @@
+
+.cards-container{
+    width: 85vw;
+    height: auto;
+    background: linear-gradient(140deg, rgba(0,38,43,1) 25%, rgba(6,102,114,1) 100%);
+    margin: 0 auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cards{
+    width: 330px;
+    height: 570px;
+    border-radius: 24px;
+    background-color:whitesmoke;
+    color:  #00262B;
+    margin: 24px 2.5%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.3s; 
+}
+
+.cards:hover{
+    scale:103%;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.8);
+    filter: brightness(101%);
+}
+
+.cards img {
+    object-fit:initial;
+    width: 100%;
+    height: 230px;
+    margin-bottom: 5px;
+    border-radius: 23px 23px 0 0;
+    border:none;  
+    position: relative;
+}
+
+.cards #codigo {
+    background-color: crimson; 
+    width: 100px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    top:-20px;
+    left: -20px;
+    border-radius: 40px 0px;
+    z-index: 2;
+    color: white;
+    font-size: 80%;
+}
+
+.cards h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 0 5px;
+    color: #00262B;
+}
+
+.cards-container section p {
+    overflow-wrap: anywhere;
+    padding: 0 15px;
+    font-size: 15px;
+    color:#00262bc5;
+}
+
+.cards .precio {
+    color: grey;
+}
+
+/* -------------------------------BOTONES---------------------------- */
+.cards .botones-contenedor {
+    width: 280px;
+    height: 50px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    font-size: 1.1rem;
+   
+}
+
+.cards .botones-contenedor button {
+    margin: 5px;
+    width: 125px;
+    height: 30px;
+    line-height: 30px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #00262bc5;
+    font-size: 1.1rem;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cards .btn-comprar{
+    background-color: rgb(20, 133, 20);
+    color:white;
+}
+.cards .btn-comprar:active{
+    background-color: #FBD63D;
+    color: rgb(6,102,114);
+}
+
+.cards .btn-info {
+    background-color:#FBD63D;
+    color: rgb(6,102,114);
+}
+
+.cards .btn-info:active{
+    background-color: rgb(20, 133, 20);
+    color:white;
+}
+
+
+/* -------------------------------MEDIAQUERY CARDS-------------------------- */
+@media  (width <=630px) {
+    .cards #codigo {
+        left: 50%; 
+        transform: translate(-50%, 0%);
+    }
+    main{
+        width: 100vw;
+    }
+    .cards-container{
+        width: 100%;
+        margin: 0px;
+    }
+    .cards {
+        height: auto;
+    }
+    .cards:hover{
+        scale:100%;
+        filter: none;
+        box-shadow: none;
+        filter: brightness(99%)
+    }
+    .cards h3, .cards p{
+        scale: 0.9;
+    }
+    .cards-container section p {
+        padding: 0;
+    }
+    .cards .botones-contenedor {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} 

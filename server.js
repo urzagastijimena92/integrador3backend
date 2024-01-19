@@ -1,8 +1,9 @@
-import express from 'express'
-import RouterProductos from './router/productos.js'
-import config from './config.js'
-import CnxMongoDB from './model/DBMongo.js'
+import express from 'express';
 
+import config from './config.js';
+import CnxMongoDB from './model/DBMongo.js';
+import RouterCarrito from './router/carrito.js';
+import RouterProductos from './router/productos.js';
 
 const app = express()
 app.use(express.static('public'))
@@ -12,6 +13,7 @@ app.use(express.json())
 
 // ------------------ Rutas / endpoints API RESTful -------------------
 app.use('/api/productos', new RouterProductos().start())
+app.use('/api/carrito', new RouterCarrito().start())
 
 // ------------------- LISTEN DEL SERVIDOR ---------------------
 if(config.MODO_PERSISTENCIA == 'MONGODB') {

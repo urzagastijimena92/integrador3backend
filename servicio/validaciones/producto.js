@@ -1,7 +1,5 @@
 import Joi from 'joi';
 
-//https://joi.dev/api/?v=17.9.1
-
 const validar = producto => {
     const productoSchema = Joi.object({
         codigo: Joi.number().required(),
