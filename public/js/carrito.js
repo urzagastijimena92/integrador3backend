@@ -175,27 +175,10 @@ function setListeners() {
 
 
 function start(){
-    var carrito = []
+
     refBotonBorrar = document.querySelector('.carrito .btn-borrar')
     refBotonPedir = document.querySelector('.carrito .btn-pedir')
 
-    const proxyCarrito = carrito => {
-
-        const handler = {
-            get: function (target, prop, receiver) {
-    
-                if (prop === 'id') {
-                    const id = target._id
-                    target.id = id
-                    return id
-                }
-                return Reflect.get(...arguments)
-            }
-        }
-        return new Proxy(carrito, handler)
-    }
-
-    carrito = proxyCarrito(carrito) 
     carrito = leer()
     
     render()
