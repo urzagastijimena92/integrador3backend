@@ -175,7 +175,7 @@ function setListeners() {
 
 
 function start(){
-
+    var carrito = []
     refBotonBorrar = document.querySelector('.carrito .btn-borrar')
     refBotonPedir = document.querySelector('.carrito .btn-pedir')
 
