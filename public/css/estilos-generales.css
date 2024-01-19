@@ -389,7 +389,7 @@ footer hr {
     transform: scale(5.5);  
     position: fixed;
     right: 50px;
-    bottom: 200px;
+    bottom: 50px;
     background-color: transparent;
     border: none;
     transition: all 0.3s;  
@@ -399,6 +399,18 @@ footer hr {
 .volver ion-icon{
     color:#FBD63D;
 }
+
+#wsp{  
+    position: fixed;
+    right: 50px;
+    transform: scale(5.5);
+    bottom: 200px;
+    background-color: transparent;
+    border: none;
+    z-index: 3;
+}
+
+
 
 /* -----------------------------------------BARRA SCROLL-------------------------------------- */
 body::-webkit-scrollbar{
@@ -479,8 +491,12 @@ body::-webkit-scrollbar-thumb{
         justify-content: center;
         align-items: center;
     }
+    #wsp{  
+        transform: scale(4.5);
+        right: 28px;
+    }
     #volver{
-        transform: scale(3.5);
+        transform: scale(5);
         right:22px;
         bottom: 28px;
     }

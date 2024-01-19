@@ -25,14 +25,12 @@ const eliminarPropiedad = (obj, prop) => {
 async function getAll() {
     const productosLeidos = await fetch(url).then(r => r.json())
     const productosLeidosProxy = productosLeidos.map(producto => proxyProducto(producto))
-    console.log(productosLeidosProxy)
     return productosLeidosProxy;
 }
 
 async function get(id){
     const productoLeido =  await fetch(url+id).then(r => r.json())
     const productoLeidoProxy = proxyProducto(productoLeido)
-    console.log(productoLeidoProxy)
     return productoLeidoProxy;
 }
 
@@ -66,7 +64,6 @@ async function actualizar(id, producto) {
         }
 
         const productoActualizado = await response.json();
-        console.log(productoActualizado)
         return proxyProducto(productoActualizado);
 
     } catch (error) {
