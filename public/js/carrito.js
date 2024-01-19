@@ -124,7 +124,7 @@ function render() {
         refBotonPedir.style.display = 'block'
     }
     else {
-        filasTabla = '<h2>No se encontraron pedidos para mostrar</h2>'
+        filasTabla = '<h2>Su carrito está vacío.</h2>'
         refBotonBorrar.style.display = 'none'
         refBotonPedir.style.display = 'none'
     }
