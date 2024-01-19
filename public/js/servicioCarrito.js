@@ -25,6 +25,7 @@ async function enviar(carrito) {
         },
         body: JSON.stringify(carrito)
     }).then(r => r.json())
+    console.log(carrito)
     const carritoLeidoProxy = proxyCarrito(carritoLeido)
     return carritoLeidoProxy;
 }

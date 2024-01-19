@@ -178,10 +178,12 @@ function start(){
 
     refBotonBorrar = document.querySelector('.carrito .btn-borrar')
     refBotonPedir = document.querySelector('.carrito .btn-pedir')
+    console.log(carrito)
 
     carrito = leer()
     
     render()
+
 }
 
 

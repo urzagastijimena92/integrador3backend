@@ -72,5 +72,5 @@ function cargarPlantillas() {
 function startMain() {
 
     cargarPlantillas() 
-    volverArriba()
+    volverArriba();
 }
